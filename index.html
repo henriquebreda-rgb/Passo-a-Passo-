@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passo a Passo: Publicando seu Site com GitHub Pages</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f8fa;
+            color: #24292e;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #d1d5da;
+            border-radius: 6px;
+        }
+        h1, h2, h3 {
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+            font-weight: 600;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 24px;
+        }
+        code {
+            padding: 0.2em 0.4em;
+            margin: 0;
+            font-size: 85%;
+            background-color: rgba(27,31,35,0.05);
+            border-radius: 3px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        }
+        ol, ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .note {
+            background-color: #fffbdd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Guia Completo: Como Publicar seu Site HTML Online de Graça com GitHub Pages</h1>
+        <p>Este documento detalha o processo, do início ao fim, para colocar um projeto ou arquivo HTML na internet. Ao final, você terá um link público que poderá compartilhar com qualquer pessoa.</p>
+
+        <h2>Pré-requisitos</h2>
+        <ul>
+            <li><strong>Uma conta gratuita no GitHub:</strong> Se não tiver, crie em <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com</a>.</li>
+            <li><strong>Seu projeto HTML:</strong> O arquivo principal do seu site <strong>obrigatoriamente</strong> deve ser nomeado <code>index.html</code> (tudo em letras minúsculas).</li>
+        </ul>
+
+        <hr>
+
+        <h2>Fase 1: Criar o Repositório (Onde seu projeto vai morar)</h2>
+        <ol>
+            <li><strong>Inicie um Novo Repositório:</strong> Após fazer login no GitHub, clique no ícone de <code>+</code> no canto superior direito e selecione <strong>"New repository"</strong>.</li>
+            <li><strong>Configure o Repositório:</strong>
+                <ul>
+                    <li><strong>Repository name:</strong> Dê um nome curto e descritivo para o seu projeto (ex: <code>meu-portfolio</code>).</li>
+                    <li><strong>Description (Opcional):</strong> Adicione uma breve descrição.</li>
+                    <li><strong>Public/Private:</strong> Selecione <strong>"Public"</strong>. Seu código precisa ser público para o site ser acessível gratuitamente.</li>
+                    <li><strong>Initialize:</strong> Marque a caixa <strong>"Add a README file"</strong>.</li>
+                </ul>
+            </li>
+            <li>Clique no botão verde <strong>"Create repository"</strong>.</li>
+        </ol>
+
+        <h2>Fase 2: Enviar seus Arquivos para o GitHub</h2>
+        <ol>
+            <li><strong>Abra a Ferramenta de Upload:</strong> Dentro do seu repositório, clique no botão <strong>"Add file"</strong> e depois em <strong>"Upload files"</strong>.</li>
+            <li><strong>Envie os Arquivos:</strong> Arraste e solte o seu <code>index.html</code> e todas as pastas e arquivos de apoio (CSS, JS, imagens, etc.) na área indicada.</li>
+            <div class="note">
+                <p><strong>Lembrete Crucial:</strong> O arquivo principal DEVE se chamar <code>index.html</code>.</p>
+            </div>
+            <li><strong>Confirme o Envio:</strong> Role a página para baixo e clique no botão verde <strong>"Commit changes"</strong>. Isso salva os arquivos no seu repositório.</li>
+        </ol>
+
+        <h2>Fase 3: Ativar o GitHub Pages (A Mágica Acontece Aqui)</h2>
+        <ol>
+            <li><strong>Acesse as Configurações:</strong> Na página principal do seu repositório, clique na aba <strong>"Settings"</strong> (ícone de engrenagem).</li>
+            <li><strong>Vá para a Seção "Pages":</strong> No menu lateral esquerdo, clique em <strong>"Pages"</strong>.</li>
+            <li><strong>Configure a Fonte de Publicação:</strong>
+                <ul>
+                    <li>Em "Source", deixe a opção <strong>"Deploy from a branch"</strong>.</li>
+                    <li>Em "Branch", selecione o ramo <strong><code>main</code></strong>, a pasta <strong><code>/root</code></strong>, e clique em <strong>"Save"</strong>.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>Fase 4: Acessar seu Site Online</h2>
+        <ol>
+            <li><strong>Aguarde a Publicação:</strong> O GitHub precisa de 1 a 5 minutos para processar seus arquivos e colocar o site no ar.</li>
+            <li><strong>Encontre seu Link:</strong> Permaneça na mesma tela (`Settings` > `Pages`) e <strong>atualize a página</strong> após alguns minutos. Uma caixa de notificação verde aparecerá no topo com a mensagem: <strong>"Your site is live at..."</strong>.</li>
+        </ol>
+        <p>O formato do link será sempre: <code>https://SEU-NOME-DE-USUARIO.github.io/NOME-DO-SEU-REPOSITORIO/</code></p>
+        
+        <hr>
+
+        <h3>Como Atualizar seu Site no Futuro?</h3>
+        <p>É muito simples. Basta repetir a <strong>Fase 2</strong>: envie as novas versões dos arquivos para o mesmo repositório. O GitHub atualizará o site online automaticamente em alguns minutos.</p>
+
+        <h3>Problemas Comuns e Soluções Rápidas</h3>
+        <ul>
+            <li><strong>O site aparece em branco:</strong> Quase sempre o problema é que o arquivo principal não se chama <code>index.html</code>. Verifique e renomeie se necessário.</li>
+            <li><strong>Fiz uma alteração, mas o site não mudou:</strong> Seu navegador pode estar mostrando uma versão antiga. Limpe o cache forçadamente pressionando <code>Ctrl + Shift + R</code> (ou <code>Cmd + Shift + R</code> no Mac).</li>
+        </ul>
+    </div>
+
+</body>
+</html>
